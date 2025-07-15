@@ -2,12 +2,10 @@ import java.util.Scanner;
 public class bank {
     static Scanner scanner=new Scanner(System.in);
     public static void main(String[] args) {
-        
-
         double balance=10;
         boolean isrunning=true;
         int choice;
-        while(isrunning){}
+        while(isrunning){
         System.out.println("BANKING SYSTEM");
         System.out.println("1.Show Balance "+" "+ "2.Deposit" +"3.Withdraw"+"4.Exit");
         System.out.println("enter your choice:");
@@ -16,17 +14,17 @@ public class bank {
         switch(choice){
             case 1 -> showBalance(balance);
             case 2-> balance=balance+deposit();
-            case 3-> System.out.println("withdraw");
+            case 3-> balance=balance-withdraw(balance);
             case 4-> isrunning=false;
             default ->System.out.println("invalid choice");
-        }
+        }}
         scanner.close();
     }
-        static void showBalance(double balance){
+    static void showBalance(double balance){
                 System.out.println("$"+balance);
         }
 
-        static double deposit(){
+    static double deposit(){
             double amount;
             System.out.println("enter amount to deposit");
             amount=scanner.nextDouble();
@@ -39,5 +37,19 @@ public class bank {
             }
             
         }
+    static double withdraw(double balance){
+            double amount;
+            System.out.println("enetr amount to be withdrawn");
+            amount=scanner.nextDouble();
+            if(amount>balance){
+                System.out.println("cant withdarw insufficient balance");
+            }
+            else{
+                return amount;
+            }
+            
+        }
     }
-  
+    
+    
+    
