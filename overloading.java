@@ -1,4 +1,21 @@
-import java.util.Scanner;
+public class overloading{
+    public static void main(String[] args) {
+
+       String a=pizza("thincrust","mozorella","onion");
+       System.out.println(a);
+    }
+    static String pizza(String bread){
+        return bread +"pizza";
+    }
+    static String pizza(String bread,String chesse){
+        return chesse+" "+bread +" "+"pizza";
+    }
+    static String pizza(String bread,String chesse,String toppings){
+        return toppings+" "+chesse+" "+bread +" "+"pizza";
+    }
+
+}
+/*import java.util.Scanner;
 public class methodoverloading {
     public static void main(String[] args) {
        Scanner scanner=new Scanner(System.in);
@@ -27,7 +44,7 @@ public class methodoverloading {
 
         
     
-}
+}*/
  
 /* 
 public class methodoverloading{
