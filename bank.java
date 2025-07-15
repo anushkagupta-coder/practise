@@ -39,7 +39,7 @@ public class bank {
         }
     static double withdraw(double balance){
             double amount;
-            System.out.println("enetr amount to be withdrawn");
+            System.out.println("enter amount to be withdrawn");
             amount=scanner.nextDouble();
             if(amount>balance){
                 System.out.println("cant withdarw insufficient balance");
@@ -47,7 +47,7 @@ public class bank {
             else{
                 return amount;
             }
-            
+            return 0;
         }
     }
     
