@@ -73,7 +73,7 @@ public class dice {
                 case 4->System.out.print(dice4);
                 case 5->System.out.print(dice5);
                 case 6->System.out.print(dice6);
-                default ->System.out.println("invalid");
+                default ->System.out.println("invalid number");
         }
     }
 }
