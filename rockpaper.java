@@ -9,6 +9,7 @@ public class rockpaper {
         String computerchoice;
 
         String playagain="yes";
+        System.out.println("WELCOME TO ROCK PAPER SCISSORS GAME");
 
         //declare variables;
         //getchoice fromuser;
@@ -17,7 +18,7 @@ public class rockpaper {
         //ask to play again;
         //ending msg;
         do{
-            System.out.println("WELCOME TO ROCK PAPER SCISSORS GAME");
+            
         System.out.println("Enter ur move(rock,paper,scissors)");
         playerchoice=scanner.nextLine().toLowerCase();
 
@@ -45,7 +46,7 @@ public class rockpaper {
         playagain=scanner.nextLine();
         }while(playagain.equals("Y"));
         
-        System.out.println("THANK YOU FOR PLAYING");
+        System.out.println("THANK YOU FOR PLAYING THE GAME");
         scanner.close();
     }
 }
