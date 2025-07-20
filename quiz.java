@@ -37,15 +37,17 @@ public class quiz {
 
             if(guess==answers[i]){
                 System.out.println("correct!!");
+                System.out.println("****************");
                 score++;
 
             }
             else{
-                System.out.println("correct!!");
+                System.out.println("Incorrect!!");
+                System.out.println("****************");
             }
         }
         System.out.println("ur final score is" + score+"out of"+questions.length);
-        
+
 
         scanner.close();
     }
