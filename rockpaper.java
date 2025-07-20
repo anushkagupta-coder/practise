@@ -26,6 +26,21 @@ public class rockpaper {
             !playerchoice.equals("scissors")) {
             System.out.println("Invalid choice");
         }
+        computerchoice=choices[random.nextInt(3)];
+        System.out.println("computer choice is:" + computerchoice);
+        
+        if(playerchoice.equals(computerchoice)) {
+            System.out.println("tie");
+        }
+        else if((playerchoice.equals("rock")&& computerchoice.equals("scissors")) ||
+                (playerchoice.equals("paper") &&computerchoice.equals("rock")) || 
+                playerchoice.equals("scissors") &&computerchoice.equals("paper")){
+            System.out.println("you win");
+        }
+        else{
+            System.out.println("you lose!!");
+        }
+
         scanner.close();
     }
 }
