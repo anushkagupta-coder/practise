@@ -16,8 +16,8 @@ public class rockpaper {
         //chack win cond;
         //ask to play again;
         //ending msg;
-
-        System.out.println("WELCOME TO ROCK PAPER SCISSORS GAME");
+        do{
+            System.out.println("WELCOME TO ROCK PAPER SCISSORS GAME");
         System.out.println("Enter ur move(rock,paper,scissors)");
         playerchoice=scanner.nextLine().toLowerCase();
 
@@ -25,6 +25,7 @@ public class rockpaper {
             !playerchoice.equals("paper")&&
             !playerchoice.equals("scissors")) {
             System.out.println("Invalid choice");
+            continue;
         }
         computerchoice=choices[random.nextInt(3)];
         System.out.println("computer choice is:" + computerchoice);
@@ -40,7 +41,11 @@ public class rockpaper {
         else{
             System.out.println("you lose!!");
         }
-
+        System.out.println("play again(Y/N):");
+        playagain=scanner.nextLine();
+        }while(playagain.equals("Y"));
+        
+        System.out.println("THANK YOU FOR PLAYING");
         scanner.close();
     }
 }
