@@ -11,12 +11,12 @@ public class quiz {
         //guess
         //check our guess
         //display final score
-        String[] questions={"WHAT IS HARRY MOTHER NAME",
-                            "NAME OF HARRY SCHOOL",
-                            "HERMOINE FULL NAME",
-                            "WHO IS UR FAV CARECTER"};
+        String[] questions={"WHAT IS HARRY'S MOTHER'S NAME",
+                            "NAME OF HARRY'S SCHOOL",
+                            "HERMOINE'S FULL NAME",
+                            "WHO IS YOUR FAV CARECTER"};
         String[][] options={{"1.lily"," 2.hermoine", "3.dumbeldore"},
-                            {"1.nirmal"," 2.hogwarts", "3.snape"},
+                            {"1.magic school"," 2.hogwarts", "3.snape"},
                             {"1.granger"," 2.potter", "3.malfoy"},
                             {"1.harry"," 2.hermoine", "3.draco"}};
         int[] answers={1,2,1,1};
