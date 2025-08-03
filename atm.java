@@ -12,11 +12,19 @@ public class atm {
         int n= Scanner.nextInt();
 
         switch (n) {
-            case 1->
+            case 1->withdraw();
     }
-    static void withdraw(int amt){
+    
+
+}
+    static int withdraw(int amt){
         System.out.println("how much amout do u wanna take out");
         amt = Scanner.nextInt();
         return (bal+amt);
     }
+
+    static int deposit(int amt2){
+        System.out.println("how much amount do you wanna deposit");
+    }
 }
+
