@@ -25,6 +25,7 @@ public class atm {
 
     static int deposit(int amt2){
         System.out.println("how much amount do you wanna deposit");
+        amt2=Scanner.nextInt();
     }
 }
 
