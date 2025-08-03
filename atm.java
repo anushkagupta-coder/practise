@@ -22,14 +22,14 @@ public class atm {
         System.out.println("how much amout do u wanna take out");
         double amt = Scanner.nextInt();
         System.out.println("now available balance is:");
-        return (bal-amt);
+        return (balance-amt);
     }
 
     static double  deposit(double balance){
         System.out.println("how much amount do you wanna deposit");
         double amt2=Scanner.nextInt();
         System.out.println("now available balance is:");
-        return (bal+amt2);
+        return (balance+amt2);
     }
     
 }
