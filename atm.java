@@ -12,14 +12,14 @@ public class atm {
         int n= scanner.nextInt();
 
         switch (n) {
-            case 1 ->balance = withdraw(balance);
-            case 2 ->balance = deposit(balance);
+            case 1 ->balance = withdraw(balance,amt);
+            case 2 ->balance = deposit(balance,amt2);
             case 3->System.out.println("thank you for using this");
     }
     scanner.close();
 
 }
-    static double withdraw(double balance){
+    static double withdraw(double balance,double amt){
         System.out.println("how much amout do u wanna take out");
         double amt = scanner.nextDouble();
         if(amt>balance){
@@ -36,7 +36,7 @@ public class atm {
         
     }
 
-    static double  deposit(double balance){
+    static double  deposit(double balance,double amt2){
         System.out.println("how much amount do you wanna deposit");
         double amt2=scanner.nextDouble();
         if(amt2<0){
