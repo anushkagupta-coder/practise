@@ -34,11 +34,14 @@ public class atm {
     static double  deposit(double balance){
         System.out.println("how much amount do you wanna deposit");
         double amt2=Scanner.nextInt();
-        if(amt<0){
+        if(amt2<0){
             System.out.println("cannot add negative amount plz check");
         }
-        System.out.println("now available balance is:");
+        else{
+            System.out.println("now available balance is:");
         return (balance+amt2);
+        }
+        
     }
     
 }
