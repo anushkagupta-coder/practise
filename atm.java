@@ -24,12 +24,14 @@ public class atm {
         double amt = scanner.nextDouble();
         if(amt>balance){
             System.out.println("insufficient balance plz check amount");
+            return 0;
         }
         else{
-            System.out.println("now available balance is:"+(balance-amt));
+            System.out.println("now available balance is:");
+            return((balance-amt));
            
         }
-        return 0;
+        
         
     }
 
