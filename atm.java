@@ -12,8 +12,9 @@ public class atm {
         int n= scanner.nextInt();
 
         switch (n) {
-            case 1 ->System.out.println( withdraw(balance));
-            case 2 ->System.out.println( deposit(balance));
+            case 1 ->balance=withdraw(balance);
+            case 2 ->balance =deposit(balance);
+            case 3->System.out.println("thank you for using this");
     }
     scanner.close();
 
@@ -25,8 +26,8 @@ public class atm {
             System.out.println("insufficient balance plz check amount");
         }
         else{
-            System.out.println("now available balance is:");
-            return (balance-amt);
+            System.out.println("now available balance is:"+(balance-amt));
+           
         }
         return 0;
         
