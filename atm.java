@@ -7,12 +7,12 @@ public class atm {
         System.out.println("THIS IS A ATM MACHINE");
         System.out.println("choose 1.withdraw");
         System.out.println("choose 2.deposit");
-        System.out.println("choose 3.check balance");
-        System.out.println("choose 4.exit");
+        System.out.println("choose 3.exit");
         int n= Scanner.nextInt();
 
         switch (n) {
             case 1->withdraw();
+            case 2->deposit();
     }
     
 
@@ -20,12 +20,14 @@ public class atm {
     static int withdraw(int amt){
         System.out.println("how much amout do u wanna take out");
         amt = Scanner.nextInt();
-        return (bal+amt);
+        System.out.println("now available balance is:");
+        return (bal-amt);
     }
 
     static int deposit(int amt2){
         System.out.println("how much amount do you wanna deposit");
         amt2=Scanner.nextInt();
+        return (bal+deposit)
     }
 }
 
