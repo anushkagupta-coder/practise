@@ -2,20 +2,20 @@
 import java.util.Scanner;
 
 public class atm {
-    Scanner scanner = new Scanner(System.in);
+    static Scanner scanner = new Scanner(System.in);
     public static void main (String[] args){
         double balance=0;
         System.out.println("THIS IS A ATM MACHINE");
         System.out.println("choose 1.withdraw");
-        System.out.println("choose 2.deposit");
-        System.out.println("choose 3.exit");
+        System.out.println(" 2.deposit");
+        System.out.println("3.exit");
         int n= scanner.nextInt();
 
         switch (n) {
             case 1 ->System.out.println( withdraw(balance));
             case 2 ->System.out.println( deposit(balance));
     }
-    
+    scanner.close();
 
 }
     static double withdraw(double balance){
