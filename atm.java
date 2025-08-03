@@ -20,13 +20,13 @@ public class atm {
 }
     static double withdraw(double balance){
         System.out.println("how much amout do u wanna take out");
-        double amt = Scanner.nextInt();
+        double amt = scanner.nextInt();
         if(amt>balance){
             System.out.println("insufficient balance plz check amount");
         }
         else{
             System.out.println("now available balance is:");
-        return (balance-amt);
+            return (balance-amt);
         }
         
     }
@@ -39,7 +39,7 @@ public class atm {
         }
         else{
             System.out.println("now available balance is:");
-        return (balance+amt2);
+            return (balance+amt2);
         }
         
     }
