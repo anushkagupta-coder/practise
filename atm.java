@@ -21,13 +21,22 @@ public class atm {
     static double withdraw(double balance){
         System.out.println("how much amout do u wanna take out");
         double amt = Scanner.nextInt();
-        System.out.println("now available balance is:");
+        if(amt>balance){
+            System.out.println("insufficient balance plz check amount");
+        }
+        else{
+            System.out.println("now available balance is:");
         return (balance-amt);
+        }
+        
     }
 
     static double  deposit(double balance){
         System.out.println("how much amount do you wanna deposit");
         double amt2=Scanner.nextInt();
+        if(amt<0){
+            System.out.println("cannot add negative amount plz check");
+        }
         System.out.println("now available balance is:");
         return (balance+amt2);
     }
