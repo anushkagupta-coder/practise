@@ -4,7 +4,6 @@ import java.util.Scanner;
 public class atm {
     Scanner scanner = new Scanner(System.in);
     public static void main (String[] args){
-        Scanner scanner = new Scanner(System.in);
         double balance=0;
         System.out.println("THIS IS A ATM MACHINE");
         System.out.println("choose 1.withdraw");
@@ -29,6 +28,7 @@ public class atm {
             System.out.println("now available balance is:");
             return (balance-amt);
         }
+        return 0;
         
     }
 
@@ -42,6 +42,7 @@ public class atm {
             System.out.println("now available balance is:");
             return (balance+amt2);
         }
+        return 0;
         
     }
     
