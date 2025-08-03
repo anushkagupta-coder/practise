@@ -21,7 +21,7 @@ public class atm {
 }
     static double withdraw(double balance){
         System.out.println("how much amout do u wanna take out");
-        double amt = scanner.nextInt();
+        double amt = scanner.nextDouble();
         if(amt>balance){
             System.out.println("insufficient balance plz check amount");
         }
@@ -34,7 +34,7 @@ public class atm {
 
     static double  deposit(double balance){
         System.out.println("how much amount do you wanna deposit");
-        double amt2=scanner.nextInt();
+        double amt2=scanner.nextDouble();
         if(amt2<0){
             System.out.println("cannot add negative amount plz check");
         }
