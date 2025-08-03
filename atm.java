@@ -2,6 +2,7 @@
 import java.util.Scanner;
 
 public class atm {
+    Scanner scanner = new Scanner(System.in);
     public static void main (String[] args){
         Scanner scanner = new Scanner(System.in);
         double balance=0;
@@ -33,7 +34,7 @@ public class atm {
 
     static double  deposit(double balance){
         System.out.println("how much amount do you wanna deposit");
-        double amt2=Scanner.nextInt();
+        double amt2=scanner.nextInt();
         if(amt2<0){
             System.out.println("cannot add negative amount plz check");
         }
