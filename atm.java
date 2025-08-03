@@ -27,10 +27,11 @@ public class atm {
             return 0;
         }
         else{
-            System.out.println("now available balance is:");
-            return((balance-amt));
+            balance=balance-amt;
+            System.out.println("deducted succesfully current balance is:");
            
         }
+        return balance;
         
         
     }
@@ -40,13 +41,12 @@ public class atm {
         double amt2=scanner.nextDouble();
         if(amt2<0){
             System.out.println("cannot add negative amount plz check");
-            return balance;
         }
         else{
-            System.out.println("now available balance is:");
             balance = balance+amt2;
-            return balance;
+            System.out.println("amount added succesfully current balance is:");
         }
+        return balance;
         
         
     }
