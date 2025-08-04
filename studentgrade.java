@@ -25,8 +25,8 @@ public class studentgrade{
 
 
     }
-    static void display(double total,double avg){
-        System.out.println("total marks are: "+total);
+    static void display(String name, char grade,double total,double avg){
+        System.out.println("name of student is:  "+name);
         System.out.println("total marks are: "+total);
         System.out.println("avg is: "+avg);
         System.out.println("grade is: "+grade);
