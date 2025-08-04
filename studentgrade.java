@@ -5,7 +5,7 @@ import java.util.Scanner;
 public class studentgrade{
     static Scanner scanner = new Scanner(System.in);
     public static void main (String[] args){
-        double[] marks=new double[3];
+        int[] marks=new int[3];
         double avg;
         double total;
         char grade;
@@ -14,10 +14,10 @@ public class studentgrade{
     static void get(String name,double marks){
         System.out.println("enter name of student");
         name=scanner.nextLine();
-        
+        System.out.println("enter marks of 3 subjects");
         for (int i = 0; i < 3; i++) {
-            System.out.println("enter marks of 3 subjects");
-            marks[i]=scanner.nextDouble();
+            System.out.println("subject"+i+1+":");
+            marks[i]=scanner.nextInt();
         }
 
     }
