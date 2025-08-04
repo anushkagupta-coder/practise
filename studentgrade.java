@@ -21,7 +21,18 @@ public class studentgrade{
         }
 
     }
-    static void calculate(double avg,double total){
+    static void calculate(double avg,double total,char grade){
+        System.out.println("total marks are");
+        
+        if(marks>70){
+            System.out.println("Grade:A");
+        }
+        else if(marks<70 && marks>40){
+            System.out.println(grade:B);
+        }
+        else{
+            System.out.println(FAIL);
+        }
 
 
     }
