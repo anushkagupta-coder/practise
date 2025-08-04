@@ -22,7 +22,7 @@ public class studentgrade{
         //to display
         System.out.println("\n--- Student Grade Reports ---");
         for (studentgrade s : students) {
-            s.display(name,grade,total,avg);
+            s.display(String name,char grade,double total,double avg);
         }
 
         scanner.close();
