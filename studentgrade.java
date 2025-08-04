@@ -22,7 +22,10 @@ public class studentgrade{
 
     }
     static void calculate(double avg,double total,char grade){
-        System.out.println("total marks are");
+        for(mark :marks){
+            total+=marks;
+        }
+        avg=total/3;
         
         if(avg>70){
             System.out.println("Grade:A");
