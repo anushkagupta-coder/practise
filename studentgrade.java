@@ -4,7 +4,7 @@ public class studentgrade{
     static Scanner scanner = new Scanner(System.in);
     public static void main (String[] args){
         
-         System.out.print("How many students? ");
+        System.out.print("How many students? ");
         int n = scanner.nextInt();
         scanner.nextLine();
         student[] students = new student[n];
@@ -26,7 +26,7 @@ public class studentgrade{
 
 
 
-    public class student{
+    static public class student{
         int[] marks=new int[3];
         double avg;
         double total;
