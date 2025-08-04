@@ -11,14 +11,14 @@ public class studentgrade{
 
         for(int i=0;i<n;i++){
             System.out.println("enetr details of student"+i+1);
-            students[i]=new students();
-            students[i].get(String name,int marks);
-            students[i].calculate(double avg,double total,char grade);
+            students[i]=new student();
+            students[i].get();
+            students[i].calculate();
         }
         //to display
         System.out.println("\n--- Student Grade Reports ---");
         for (student s : students) {
-            s.display(String name,char grade,double total,double avg);
+            s.display();
         }
 
         scanner.close();
@@ -32,7 +32,7 @@ public class studentgrade{
         double total;
         char grade;
         String name;
-    void get(String name,double marks){
+    void get(){
         System.out.println("enter name of student");
         name=scanner.nextLine();
         System.out.println("enter marks of 3 subjects");
@@ -42,7 +42,7 @@ public class studentgrade{
         }
 
     }
-    void calculate(double avg,double total,char grade){
+    void calculate(){
         total=0;
         for(int mark :marks){
             total+=mark;
@@ -61,7 +61,7 @@ public class studentgrade{
 
 
     }
-    void display(String name, char grade,double total,double avg){
+    void display(){
         System.out.println("name of student is:  "+name);
         System.out.println("total marks are: "+total);
         System.out.println("avg is: "+avg);
