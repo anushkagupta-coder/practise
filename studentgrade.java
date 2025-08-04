@@ -11,20 +11,24 @@ public class studentgrade{
         char grade;
         String name;
     }
-    static void get(){
+    static void get(String name,double marks){
         System.out.println("enter name of student");
         name=scanner.nextLine();
         
         for (int i = 0; i < 3; i++) {
             System.out.println("enter marks of 3 subjects");
-            marks=scanner.nextDouble();
+            marks[i]=scanner.nextDouble();
         }
 
     }
-    static void calculate(){
+    static void calculate(double avg,double total){
+
 
     }
-    static void display(){
-
+    static void display(double total,double avg){
+        System.out.println("total marks are: "+total);
+        System.out.println("total marks are: "+total);
+        System.out.println("avg is: "+avg);
+        System.out.println("grade is: "+grade);
     }
 }
