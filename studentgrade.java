@@ -11,17 +11,17 @@ public class studentgrade{
          System.out.print("How many students? ");
         int n = scanner.nextInt();
         scanner.nextLine();
-        Student[] students = new Student[n];
+        studentgrade[] students = new studentgrade[n];
 
         for(int i=0;i<n;i++){
             System.out.println("enetr details of student"+i+1);
-            student[i]=new student();
-            student[i].get(name,marks);
-            student[i].calculate(avg,total,grade);
+            students[i]=new students();
+            students[i].get(String name,int marks);
+            students[i].calculate(double avg,double total,char grade);
         }
         //to display
         System.out.println("\n--- Student Grade Reports ---");
-        for (Student s : students) {
+        for (studentgrade s : students) {
             s.display(name,grade,total,avg);
         }
 
