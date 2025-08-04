@@ -1,5 +1,3 @@
-
-import java.rmi.MarshalException;
 import java.util.Scanner;
 
 public class studentgrade{
@@ -10,6 +8,12 @@ public class studentgrade{
         double total;
         char grade;
         String name;
+         System.out.print("How many students? ");
+        int n = scanner.nextInt();
+        scanner.nextLine();
+        
+
+        Student[] students = new Student[n];
     }
     static void get(String name,double marks){
         System.out.println("enter name of student");
