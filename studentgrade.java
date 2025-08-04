@@ -1,10 +1,11 @@
 
+import java.rmi.MarshalException;
 import java.util.Scanner;
 
 public class studentgrade{
     static Scanner scanner = new Scanner(System.in);
     public static void main (String[] args){
-        double[] marks=new marks[3];
+        double[] marks=new double[3];
         double avg;
         double total;
         char grade;
@@ -13,7 +14,11 @@ public class studentgrade{
     static void get(){
         System.out.println("enter name of student");
         name=scanner.nextLine();
-        System.out.println("enter marks of 3 subjects");
+        
+        for (int i = 0; i < 3; i++) {
+            System.out.println("enter marks of 3 subjects");
+            marks=scanner.nextDouble();
+        }
 
     }
     static void calculate(){
