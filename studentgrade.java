@@ -57,7 +57,7 @@ public class studentgrade{
             grade='B';
         }
         else{
-            grade='fail';
+            grade='F';
         }
 
 
