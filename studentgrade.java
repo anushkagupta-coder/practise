@@ -24,14 +24,14 @@ public class studentgrade{
     static void calculate(double avg,double total,char grade){
         System.out.println("total marks are");
         
-        if(marks>70){
+        if(avg>70){
             System.out.println("Grade:A");
         }
-        else if(marks<70 && marks>40){
-            System.out.println(grade:B);
+        else if(avg<70 && avg>40){
+            System.out.println("grade:B");
         }
         else{
-            System.out.println(FAIL);
+            System.out.println("FAIL");
         }
 
 
