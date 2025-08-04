@@ -11,9 +11,21 @@ public class studentgrade{
          System.out.print("How many students? ");
         int n = scanner.nextInt();
         scanner.nextLine();
-        
-
         Student[] students = new Student[n];
+
+        for(int i=0;i<n;i++){
+            System.out.println("enetr details of student"+i+1);
+            student[i]=new student();
+            student[i].get(name,marks);
+            student[i].calculate(avg,total,grade);
+        }
+        //to display
+        System.out.println("\n--- Student Grade Reports ---");
+        for (Student s : students) {
+            s.display(name,grade,total,avg);
+        }
+
+        scanner.close();
     }
     static void get(String name,double marks){
         System.out.println("enter name of student");
