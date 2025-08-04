@@ -3,15 +3,11 @@ import java.util.Scanner;
 public class studentgrade{
     static Scanner scanner = new Scanner(System.in);
     public static void main (String[] args){
-        int[] marks=new int[3];
-        double avg;
-        double total;
-        char grade;
-        String name;
+        
          System.out.print("How many students? ");
         int n = scanner.nextInt();
         scanner.nextLine();
-        studentgrade[] students = new studentgrade[n];
+        student[] students = new student[n];
 
         for(int i=0;i<n;i++){
             System.out.println("enetr details of student"+i+1);
@@ -21,13 +17,22 @@ public class studentgrade{
         }
         //to display
         System.out.println("\n--- Student Grade Reports ---");
-        for (studentgrade s : students) {
+        for (student s : students) {
             s.display(String name,char grade,double total,double avg);
         }
 
         scanner.close();
     }
-    static void get(String name,double marks){
+
+
+
+    public class student{
+        int[] marks=new int[3];
+        double avg;
+        double total;
+        char grade;
+        String name;
+    void get(String name,double marks){
         System.out.println("enter name of student");
         name=scanner.nextLine();
         System.out.println("enter marks of 3 subjects");
@@ -37,7 +42,7 @@ public class studentgrade{
         }
 
     }
-    static void calculate(double avg,double total,char grade){
+    void calculate(double avg,double total,char grade){
         total=0;
         for(int mark :marks){
             total+=mark;
@@ -56,10 +61,11 @@ public class studentgrade{
 
 
     }
-    static void display(String name, char grade,double total,double avg){
+    void display(String name, char grade,double total,double avg){
         System.out.println("name of student is:  "+name);
         System.out.println("total marks are: "+total);
         System.out.println("avg is: "+avg);
         System.out.println("grade is: "+grade);
     }
+}
 }
