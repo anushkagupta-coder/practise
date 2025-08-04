@@ -10,7 +10,7 @@ public class studentgrade{
         student[] students = new student[n];
 
         for(int i=0;i<n;i++){
-            System.out.println("enetr details of student"+i+1);
+            System.out.println("enetr details of student"+(i+1));
             students[i]=new student();
             students[i].get();
             students[i].calculate();
@@ -37,7 +37,7 @@ public class studentgrade{
         name=scanner.nextLine();
         System.out.println("enter marks of 3 subjects");
         for (int i = 0; i < 3; i++) {
-            System.out.println("subject"+i+1+":");
+            System.out.println("subject"+(i+1)+":");
             marks[i]=scanner.nextInt();
         }
 
@@ -50,13 +50,13 @@ public class studentgrade{
         avg=total/3;
         
         if(avg>70){
-            System.out.println("Grade:A");
+            grade="A";
         }
         else if(avg<70 && avg>40){
-            System.out.println("grade:B");
+            grade="B";
         }
         else{
-            System.out.println("FAIL");
+            grade="FAIL";
         }
 
 
