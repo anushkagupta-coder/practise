@@ -50,13 +50,13 @@ public class studentgrade{
         avg=total/3;
         
         if(avg>70){
-            grade="A";
+            System.out.println("grade: A");;
         }
         else if(avg<70 && avg>40){
-            grade="B";
+            System.out.println("grade b");
         }
         else{
-            grade="FAIL";
+            System.out.println("fail");
         }
 
 
