@@ -40,6 +40,7 @@ public class studentgrade{
             System.out.println("subject"+(i+1)+":");
             marks[i]=scanner.nextInt();
         }
+        scanner.nextLine();
 
     }
     void calculate(){
