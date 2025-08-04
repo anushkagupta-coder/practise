@@ -24,7 +24,7 @@ public class studentgrade{
     static void calculate(double avg,double total,char grade){
         total=0;
         for(int mark :marks){
-            total+=marks;
+            total+=mark;
         }
         avg=total/3;
         
