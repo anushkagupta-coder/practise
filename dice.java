@@ -18,6 +18,7 @@ public class dice {
                 total = total + roll;
             }
             System.out.println("total"+ total);
+            
         }
         else{
             System.out.println("must be greater than 0");
