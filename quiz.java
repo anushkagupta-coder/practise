@@ -19,7 +19,7 @@ public class quiz {
                             {"1.magic school"," 2.hogwarts", "3.snape"},
                             {"1.granger"," 2.potter", "3.malfoy"},
                             {"1.harry"," 2.hermoine", "3.draco"}};
-                            
+
         int[] answers={1,2,1,1};
         int score=0;
         int guess;
@@ -48,8 +48,7 @@ public class quiz {
             }
         }
         System.out.println("ur final score is" + score+"out of"+questions.length);
-
-
+        
         scanner.close();
     }
     
